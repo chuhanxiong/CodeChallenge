@@ -1,0 +1,22 @@
+<template name="results">
+<table>
+  <thead>
+    <th> P1 </th>
+    <th> P2 </th>
+    <th> Winner </th>
+    <th> Round </th>
+    <th> P1 Score </th>
+    <th> P2 Score </th>    
+  </thead>
+  {{#each games}}
+    <tr>
+      <td class="td"><img src={{player1_img}} /></td>
+      <td class="td"><img src={{player2_img}} /></td>
+      <td class="td">{{result}}</td>
+      <td class="td">{{round}}</td>
+      <td class="td">{{player1Score}}</td>
+      <td class="td">{{player2Score}}</td>   
+    </tr>  
+  {{/each}}
+</table>
+</template>
